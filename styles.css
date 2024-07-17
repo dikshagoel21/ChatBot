@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+p{
+    color: rgb(226, 15, 15);
+    font-size: 19px;
+}
+.header {
+    text-align: center;
+     color: #080808;
+     width: 100%;
+}
+
+.header h1 {
+    color: #555;
+    font-size: 30px;
+    padding:0 150px 0 150px;
+}
+ 
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.input-box {
+    
+    padding: 10px;
+     border-radius: 12px;    max-width: 75%;
+    word-wrap: break-word;
+ 
+    font-size: 17px;
+    align-self: flex-start;
+    padding-left: 15px; 
+}
+
+.message {
+    padding: 10px; 
+    border-radius: 12px;     max-width: 75%;
+    word-wrap: break-word;
+}
+
+.message.bot {
+    align-self: flex-start;
+    padding: 15px;
+    color: #444242;
+    line-height: 1.5;
+    font-size: 17px;
+    background-color: #e4e4e4; 
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 17x;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #0056b3;
+} 
+.footer {
+    margin-top: 300px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #555;
+    background-color: #afa6a63a; 
+    text-justify: auto;
+    line-height: 1.7;
+    
+}
+p{
+    font-weight: 700;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    
+} 
+   @keyframes flickerAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.flicker {
+    animation: flickerAnimation 1s infinite;
+}
+
+ .online-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #30ee39; 
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: flickerAnimation 1s infinite;  
+}
+.online-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b5563; 
+}
+a{
+    text-decoration-line: none;
+    color: #007bff;
+}
